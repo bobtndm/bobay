@@ -18,33 +18,33 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""||=====  F O R   U S E R  =====||
-||��✒ Mention       - Mention All Member Group
-||��✒ Lurking       - Set Point Read
-||��✒ Result        - Reading Point
-||��✒ Ginfo         - Info Grup
+�✒ Mention       - Mention All Member Group
+�✒ Lurking       - Set Point Read
+�✒ Result        - Reading Point
+�✒ Ginfo         - Info Grup
 ||===== F O R   A D M I N =====||
-||��✒ Glist         - List Group BOT
-||��✒ Cancel        - Cancel All Pending Grup
-||��✒ Mid @         - Get MID 
-||��✒ Invite        - Invite Via Send Contact
-||��✒ Invite:       - Via MID
-||��✒ Whitelist @   - Via Tag
-||��✒ Whitelist:    - Via Mid
-||��✒ Whitelist     - Via Send Contact
-||��✒ Blacklist @   - Via Tag
-||��✒ Blacklist:    - Via Mid
-||��✒ Blacklist     - Via Send Contact
-||��✒ Clear ban     - Delete All Blacklist
-||��✒ Link on       - Open QR
-||��✒ Link off      - Close QR
-||��✒ Gurl          - Open QR And Get Link
-||��✒ Url           - Get QR Link
-||��✒ Gname         - Change Name Group
-||��✒ Banlist       - Cek Tersangka Kriminal
-||��✒ Details grup  - Via Gid
-||��✒ Inviteme:     - Via Gid
-||��✒ Info grup
-||��✒ Clear grup
+�✒ Glist         - List Group BOT
+�✒ Cancel        - Cancel All Pending Grup
+�✒ Mid @         - Get MID 
+�✒ Invite        - Invite Via Send Contact
+�✒ Invite:       - Via MID
+�✒ Whitelist @   - Via Tag
+�✒ Whitelist:    - Via Mid
+�✒ Whitelist     - Via Send Contact
+�✒ Blacklist @   - Via Tag
+�✒ Blacklist:    - Via Mid
+�✒ Blacklist     - Via Send Contact
+�✒ Clear ban     - Delete All Blacklist
+�✒ Link on       - Open QR
+�✒ Link off      - Close QR
+�✒ Gurl          - Open QR And Get Link
+�✒ Url           - Get QR Link
+�✒ Gname         - Change Name Group
+�✒ Banlist       - Cek Tersangka Kriminal
+�✒ Details grup  - Via Gid
+�✒ Inviteme:     - Via Gid
+�✒ Info grup
+�✒ Clear grup
 ||===== F O R  K I C K E R =====||
 ||��✒ Nuke
 ||��✒ Ratakan
@@ -93,9 +93,7 @@ helpMessage ="""||=====  F O R   U S E R  =====||
 
                ✯==== Creator ====✯
 	
-  Http://line.me/ti/p/~muhmursalind
-
-                    ATTENTION!!!!
+                  ATTENTION!!!!
   Creator nya sok tau bahasa inggris :V
 """
 helo=""
@@ -145,9 +143,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"✟Ƥɾøтøтуρє✟一�:緑\n\nCreator : Http://line.me/ti/p/~muhmursalind",
+    'message':"✟Ƥɾøтøтуρє✟一�:緑\n\nCreator ",
     "lang":"JP",
-    "comment":"Auto Like By ✟Ƥɾøтøтуρє✟一�:緑\n\nCreator : Http://line.me/ti/p/~muhmursalind",
+    "comment":"Auto Like By ✟Ƥɾøтøтуρє✟一�:緑\n\nCreator ",
     "commentOn":False,
     "likeOn":False,
     "commentBlack":{},
@@ -158,7 +156,7 @@ wait = {
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "protect":True,
+    "protect":False,
     "cancelprotect":False,
     "inviteprotect":False,
     "linkprotect":False,
@@ -183,11 +181,11 @@ mybackup.displayName = contact.displayName
 mybackup.statusMessage = contact.statusMessage
 mybackup.pictureStatus = contact.pictureStatus
 
-contact = ki.getProfile()
-backup = ki.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
+#contact = ki.getProfile()
+#backup = ki.getProfile()
+#backup.displayName = contact.displayName
+#backup.statusMessage = contact.statusMessage
+#backup.pictureStatus = contact.pictureStatus
 
 def cms(string, commands): #/XXX, >XXX, ;XXX, ^XXX, %XXX, $XXX...
     tex = ["+","@","/",">",";","^","%","$","＾","サテラ:","サテラ:","サテラ：","サテラ："]
@@ -7310,8 +7308,7 @@ thread2.start()
 #        hasil = cl.activity(limit=1000)
 #        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
 #          try:    
-#            ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki.like(hasil['result']['posts'][z")
 #            ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
 #            ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
 #            ki3.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
