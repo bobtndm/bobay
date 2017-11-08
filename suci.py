@@ -98,41 +98,10 @@ helpMessage ="""||=====  F O R   U S E R  =====||
 """
 helo=""
 
-KAC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,k1,k2,k3,k4,k5,k6,k6,k8,k9,w1,w2,w3,w4,w5,w6,w7,w8,w9,l1,l2,l3,l4,l5]
+KAC=[cl]
+#KAC=[cl]AC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,k1,k2,k3,k4,k5,k6,k6,k8,k9,w1,w2,w3,w4,w5,w6,w7,w8,w9,l1,l2,l3,l4,l5]
 mid = cl.getProfile().mid
-kimid = ki.getProfile().mid
-ki2mid = ki2.getProfile().mid
-ki3mid = ki3.getProfile().mid
-ki4mid = ki4.getProfile().mid
-ki5mid = ki5.getProfile().mid
-ki6mid = ki6.getProfile().mid
-ki7mid = ki7.getProfile().mid
-ki8mid = ki8.getProfile().mid
-ki9mid = ki9.getProfile().mid
-k1mid = k1.getProfile().mid
-k2mid = k2.getProfile().mid
-k3mid = k3.getProfile().mid
-k4mid = k4.getProfile().mid
-k5mid = k5.getProfile().mid
-k6mid = k6.getProfile().mid
-k7mid = k7.getProfile().mid
-k8mid = k8.getProfile().mid
-k9mid = k9.getProfile().mid
-w1mid = w1.getProfile().mid
-w2mid = w2.getProfile().mid
-w3mid = w3.getProfile().mid
-w4mid = w4.getProfile().mid
-w5mid = w5.getProfile().mid
-w6mid = w6.getProfile().mid
-w7mid = w7.getProfile().mid
-w8mid = w8.getProfile().mid
-w9mid = w9.getProfile().mid
-l1mid = l1.getProfile().mid
-l2mid = l2.getProfile().mid
-l3mid = l3.getProfile().mid
-l4mid = l4.getProfile().mid
-l5mid = l5.getProfile().mid
-Bots = [mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,k1mid,k2mid,k3mid,k4mid,k5mid,k6mid,k7mid,k8mid,k9mid,w1mid,w2mid,w3mid,w4mid,w5mid,w6mid,w7mid,w8mid,w9mid,l1mid,l2mid,l3mid,l4mid,l5mid,"u1f41296217e740650e0448b96851a3e2"]
+Bots = [mid,"u1f41296217e740650e0448b96851a3e2"]
 admsa = "u1f41296217e740650e0448b96851a3e2"
 admin = "u1f41296217e740650e0448b96851a3e2"
 
@@ -143,9 +112,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"✟Ƥɾøтøтуρє✟一�:緑\n\nCreator ",
+    'message':"✟Ƥɾøтerangkan lah ",
     "lang":"JP",
-    "comment":"Auto Like By ✟Ƥɾøтøтуρє✟一�:緑\n\nCreator ",
+    "comment":"Auto Like By ✟Ƥɾøтøтуρє✟ pekok ",
     "commentOn":False,
     "likeOn":False,
     "commentBlack":{},
