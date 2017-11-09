@@ -5,13 +5,13 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,requests,urllib
 
-cl = LINETCR.LINE()
-cl.login(qr=True)
-cl.loginResult()
-
 #cl = LINETCR.LINE()
-#cl.login(token="authToken Kamu")
+#cl.login(qr=True)
 #cl.loginResult()
+
+cl = LINETCR.LINE()
+cl.login(token="EmaFWrYsnYM9o3cMLFH5.dKLCtEUQje5FyFtGKjupDq.tzITZ9B4B8K14OLZrTZL2l5b0vMUMmeBq+AuA/ESrn0=")
+cl.loginResult()
 
 print u"login success"
 reload(sys)
