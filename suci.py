@@ -19,8 +19,8 @@ sys.setdefaultencoding('utf-8')
 
 helpMessage ="""||=====  F O R   U S E R  =====||
 �✒ Mention       - Mention All Member Group
-�✒ Lurking       - Set Point Read
-�✒ Result        - Reading Point
+�✒ Cek           - Set Point Read
+�✒ Sider         - Reading Point
 �✒ Ginfo         - Info Grup
 ||===== F O R   A D M I N =====||
 �✒ Glist         - List Group BOT
@@ -92,9 +92,8 @@ helpMessage ="""||=====  F O R   U S E R  =====||
 ||======= FOR ADMIN =======||
 
                ✯==== Creator ====✯
-	
-                  ATTENTION!!!!
-  Creator nya sok tau bahasa inggris :V
+	           line: bobtndm
+                  
 """
 helo=""
 
@@ -1639,7 +1638,7 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "==============================\nActive readers:%s\n\n\n\nPassive readers:\n%s\n\n==============================\nIn the last seen point:\n[%s]\n==============================\n [☸]➦Powered By: Alin々•┅─────" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "==============================\nActive readers:%s\n\n\n\nPassive readers:\n%s\n\n==============================\nIn the last seen point:\n[%s]\n==============================\n [☸]➦Powered By: Bobtndm々•┅─────" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                         print "ReadPoint Set..."
                         try:
                             del wait2['readPoint'][msg.to]
