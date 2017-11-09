@@ -9,6 +9,10 @@ cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
+ki = LINETCR.LINE()
+ki.login(qr=True)
+ki.loginResult()
+
 #cl = LINETCR.LINE()
 #cl.login(token="EmaFWrYsnYM9o3cMLFH5.dKLCtEUQje5FyFtGKjupDq.tzITZ9B4B8K14OLZrTZL2l5b0vMUMmeBq+AuA/ESrn0=")
 #cl.loginResult()
@@ -92,15 +96,15 @@ helpMessage ="""||=====  F O R   U S E R  =====||
 ||======= FOR ADMIN =======||
 
                ✯==== Creator ====✯
-	           line: bobtndm
+	               line: bobtndm
                   
 """
 helo=""
 
-KAC=[cl]
+KAC=[cl,ki]
 #KAC=[cl]AC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,k1,k2,k3,k4,k5,k6,k6,k8,k9,w1,w2,w3,w4,w5,w6,w7,w8,w9,l1,l2,l3,l4,l5]
 mid = cl.getProfile().mid
-Bots = [mid,"uf43eb623c4b246c45690bf19e048af05"]
+Bots = ["uf43eb623c4b246c45690bf19e048af05","u0e495c4debaa244e5f61f4e090950f75"]
 admsa = "u0e495c4debaa244e5f61f4e090950f75"
 admin = "u0e495c4debaa244e5f61f4e090950f75"
 
@@ -2723,7 +2727,7 @@ def bot(op):
 #-----------------------------------------------------------
             elif msg.text in ["Bot sp","Bot speed"]:
                 start = time.time()
-                ki.sendText(msg.to, "Mohon Bersabar Ini Gratisan...")
+                ki.sendText(msg.to, "Processing...")
                 elapsed_time = time.time() - start
                 ki.sendText(msg.to, "%sseconds" % (elapsed_time))
                 elapsed_time = time.time() - start
