@@ -101,9 +101,9 @@ helo=""
 KAC=[cl]
 #KAC=[cl]AC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,k1,k2,k3,k4,k5,k6,k6,k8,k9,w1,w2,w3,w4,w5,w6,w7,w8,w9,l1,l2,l3,l4,l5]
 mid = cl.getProfile().mid
-Bots = [mid,"u1f41296217e740650e0448b96851a3e2"]
-admsa = "u1f41296217e740650e0448b96851a3e2"
-admin = "u1f41296217e740650e0448b96851a3e2"
+Bots = [mid,"u0e495c4debaa244e5f61f4e090950f75"]
+admsa = "u0e495c4debaa244e5f61f4e090950f75"
+admin = "u0e495c4debaa244e5f61f4e090950f75"
 
 wait = {
     'contact':False,
@@ -114,7 +114,7 @@ wait = {
     'autoAdd':True,
     'message':"✟Ƥɾøтerangkan lah ",
     "lang":"JP",
-    "comment":"Auto Like By ✟Ƥɾøтøтуρє✟ pekok ",
+    "comment":"Auto Like By BOBBOT ! line: bobtndm ",
     "commentOn":False,
     "likeOn":False,
     "commentBlack":{},
@@ -205,7 +205,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u1f41296217e740650e0448b96851a3e2":
+                if msg.from_ == "u0e495c4debaa244e5f61f4e090950f75":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -1614,7 +1614,7 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Silahkan Aktifkan Nama")
 
-            elif msg.text == "Lurking":
+            elif msg.text == "Cek":
                 if msg.toType == 2:
                     cl.sendText(msg.to, "Set reading point:" + datetime.now().strftime('\n%Y/%m/%d %H:%M:%S'))
                     try:
@@ -1628,7 +1628,7 @@ def bot(op):
                         wait2['ROM'][msg.to] = {}
                         print wait2
                         
-            elif msg.text == "Result":
+            elif msg.text == "Sider":
                 if msg.toType == 2:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
@@ -1777,7 +1777,7 @@ def bot(op):
                                       print (msg.to,[g.mid])
                                   except:
                                       cl.sendText(msg.to,"Sukses Bosqu")
-                                      cl.sendText(msg.to,"masih mauko sundala")
+                                      cl.sendText(msg.to,"APALAH APALAH")
 
             elif msg.text in ["List grup"]:
                 if msg.from_ in admin:
@@ -2309,12 +2309,12 @@ def bot(op):
 
             elif msg.text.lower() == 'me':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': mid}
+                msg.contentMetadata = {'u0e495c4debaa244e5f61f4e090950f75': mid}
                 cl.sendMessage(msg)
 
             elif cms(msg.text,["creator","Creator"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': admsa}
+                msg.contentMetadata = {'u0e495c4debaa244e5f61f4e090950f75': admsa}
                 cl.sendText(msg.to,"􀜁􀇔􏿿 My Creator 􀜁􀇔􏿿 ")
                 cl.sendMessage(msg)
                 cl.sendText(msg.to,"􀜁􀇔􏿿 Dont Kick out From group 􀜁􀇔􏿿 ")
