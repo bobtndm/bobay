@@ -1,3 +1,4 @@
+# Editing By: Bobtndm
 # -*- coding: utf-8 -*-
 
 import LINETCR
@@ -29,7 +30,8 @@ print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""||=====  F O R   U S E R  =====||
+helpMessage ="""      Menu
+||=====  F O R   U S E R  =====||
 �✒ Mention       - Mention All Member Group
 �✒ Cek           - Set Point Read
 �✒ Sider         - Reading Point
@@ -112,9 +114,9 @@ helo=""
 KAC=[admin,cl,ki,ki2]
 #KAC=[cl]AC=[cl,ki,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,k1,k2,k3,k4,k5,k6,k6,k8,k9,w1,w2,w3,w4,w5,w6,w7,w8,w9,l1,l2,l3,l4,l5]
 mid = cl.getProfile().mid
-Bots = ["u0e495c4debaa244e5f61f4e090950f75","uf43eb623c4b246c45690bf19e048af05","u1d49a62a9c1ce9bea54d0eced64cf04","uf41eeac6f34ebb531b1acba159203dea"]
-admsa = "u0e495c4debaa244e5f61f4e090950f75"
-admin = "u0e495c4debaa244e5f61f4e090950f75"
+Bots = ["uf41eeac6f34ebb531b1acba159203dea","uf43eb623c4b246c45690bf19e048af05","u1d49a62a9c1ce9bea54d0eced64cf04","uf41eeac6f34ebb531b1acba159203dea"]
+admsa = ["u0e495c4debaa244e5f61f4e090950f75"]
+admin = ["u0e495c4debaa244e5f61f4e090950f75"]
 
 wait = {
     'contact':False,
@@ -2089,6 +2091,7 @@ def bot(op):
                 try:
                     ki.updateDisplayPicture(backup.pictureStatus)
                     ki.updateProfile(backup)
+		    ki.sendText(msg.to, "Backup Sukses Bosqu")
                     ki2.updateDisplayPicture(backup.pictureStatus)
                     ki2.updateProfile(backup)
                     ki3.updateDisplayPicture(backup.pictureStatus)
