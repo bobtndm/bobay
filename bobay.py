@@ -1661,7 +1661,7 @@ def bot(op):
 #-----------------------[Add Staff Section]------------------------
             elif "Add staff @" in msg.text:
                 if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
-                    print "[Command]Staff Adding"
+                    #print "[Command]Staff Adding"
                     _name = msg.text.replace("Add staff @","")
                     _nametarget = _name.rstrip('  ')
                     gs = cl.getGroup(msg.to)
