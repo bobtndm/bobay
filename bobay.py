@@ -1726,7 +1726,7 @@ def bot(op):
 #----------------------ADMIN COMMAND------------------------------#
 
             elif ("Kick " in msg.text):
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -1755,7 +1755,7 @@ def bot(op):
                     cl.sendMessage(msg) 
 
             elif "Ratakan" in msg.text:
-                  if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                  if msg.from_ in admin:
                        nk0 = msg.text.replace("Ratakan","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("all","")
@@ -1783,7 +1783,7 @@ def bot(op):
                                       cl.sendText(msg.to,"APALAH APALAH")
 
             elif msg.text in ["List grup"]:
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     gid = cl.getGroupIdsJoined()
                     h = "===[List Groups]==="
                     total = str(len(gid))
@@ -1834,7 +1834,7 @@ def bot(op):
                         cl.sendText(msg.to,"Tidak ada grup tertunda saat ini")
 
             elif msg.text in ["Info grup"]:
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     gid = cl.getGroupIdsJoined()
                     cl.sendText(msg.to,"===[List Details Group]===")
                     total = str(len(gid))
@@ -1887,7 +1887,7 @@ def bot(op):
                         cl.sendText(msg.to,"Tidak ada grup tertunda saat ini")
 
             elif "Details grup: " in msg.text:
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     gid = msg.text.replace("/DetailsGroup: ","")
                     if gid in [""," "]:
                         cl.sendText(msg.to,"Grup id tidak valid")
@@ -1908,7 +1908,7 @@ def bot(op):
                             cl.sendText(msg.to,(error))
             
             elif "Cancel invite: " in msg.text:
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     gids = msg.text.replace("Cancel invite: ","")
                     gid = cl.getGroup(gids)
                     for i in gid:
@@ -1926,7 +1926,7 @@ def bot(op):
                         cl.sendText(msg.to,"Grup tidak ditemukan")
             
             elif msg.text in ["Accept invite"]:
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     gid = cl.getGroupIdsInvited()
                     _list = ""
                     for i in gid:
@@ -1966,7 +1966,7 @@ def bot(op):
                     cl.sendText(msg.to,"Tidak Dapat Mengubah Nama Grup")
 
             elif "Kick: " in msg.text:
-              if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+              if msg.from_ in admin:
                 midd = msg.text.replace("Kick: ","")
                 cl.kickoutFromGroup(msg.to,[midd])
             elif "Invite: " in msg.text:
@@ -2154,7 +2154,7 @@ def bot(op):
                     cl.sendText(manusia, (bctxt))
 
             elif "Bot:ct " in msg.text:
-              if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+              if msg.from_ in admin:
                 bctxt = msg.text.replace("Bot:ct ", "")
                 b = ki.getAllContactIds()
                 for manusia in b:
@@ -2224,7 +2224,7 @@ def bot(op):
                     cl.sendText(manusia, (bctxt))
             
             elif "Bot:grup " in msg.text:
-              if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+              if msg.from_ in admin:
                 bctxt = msg.text.replace("Bot:grup ", "")
                 b = ki.getGroupIdsJoined()
                 for manusia in b:
