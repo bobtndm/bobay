@@ -1659,7 +1659,7 @@ def bot(op):
                         cl.sendText(msg.to, "Reading point has not been set.")
 
 #-----------------------[Add Staff Section]------------------------
-            elif "Add staff @" in msg.text:
+            #elif "Add staff @" in msg.text:
                 if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
                     #print "[Command]Staff Adding"
                     _name = msg.text.replace("Add staff @","")
@@ -1684,7 +1684,7 @@ def bot(op):
                     cl.sendText(msg.to,"Admin permission required.")
 
             elif "Remove staff @" in msg.text:
-                if msg.from_ in admin:["u0e495c4debaa244e5f61f4e090950f75"]
+                if msg.from_ in admin:
                     print "[Command]Staff remove executing"
                     _name = msg.text.replace("Remove staff @","")
                     _nametarget = _name.rstrip('  ')
